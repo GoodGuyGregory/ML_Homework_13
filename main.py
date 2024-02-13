@@ -1,5 +1,3 @@
-import copy
-import math
 import random
 
 
@@ -44,9 +42,6 @@ def main():
             # generate a random starting point
             xValue = random.randint(-10, 10)
             yValue = random.randint(-10, 10)
-
-            originalxValue = copy.deepcopy(xValue)
-            originalyValue = copy.deepcopy(yValue)
 
             for i in range(500):
                 xYDeltas = gradientDescent(rate, xValue, yValue)
